@@ -1,22 +1,57 @@
-.App {
-  text-align: center;
+*{
+    margin:0%;
+    padding:0%;
+}
+.cardgrid{
+    display:grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-gap:1rem;
+  padding:80px 20px;
+
 }
 
-.App-logo {
-  height: 40vmin;
+.MuiButton-textPrimary {
+  color: #3f51b5;
+  border: 0.5px solid;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.makeStyles-button-136 {
+  margin: 8px;
+  border: 1px solid;
 }
 
-.App-link {
-  color: #09d3ac;
+
+.MuiDialog-paperWidthSm {
+  max-width: 601px;
+  width: 420px;
+}
+
+.MuiInputBase-input {
+  width:380px;
+}
+
+
+
+.MuiTypography-colorTextSecondary {
+  color: rgba(0, 0, 0, 0.54);
+  border: 1px solid #eee;
+  margin-bottom: 8px !important;
+  border-radius: 6px;
+  padding-top: 4px;
+  box-shadow: 0px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.004);
+ 
+}
+
+@media only screen and (max-width:600px){
+  .cardgrid {
+    display: block;
+    
+    grid-gap: 1rem;
+    padding: 72px 13px;
+   
+}
+.cardgrid > * {
+  margin-bottom: 14px;
+
+}
 }
